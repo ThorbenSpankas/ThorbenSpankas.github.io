@@ -1,5 +1,4 @@
-var Web3 = require("web3");
-var web3 = require("web3");
+import Web3 from "web3";
 
 function registerConnect() {
 	// Modern dapp browsers...
