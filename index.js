@@ -1,3 +1,6 @@
+var Web3 = require("web3");
+var web3 = require("web3");
+
 function registerConnect() {
 	// Modern dapp browsers...
   console.log("klappt bis hier");
