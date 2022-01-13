@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambling Problems</title>
+    <link rel="stylesheet" href="basic.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+    <style>
+		main,footer {
+			margin: 0 auto;
+			width: 60%;
+			text-align: left;
+			padding: 0 20px;
+		}
+
+		section>section {
+			color: #fff;
+			background-color: var(--c1);
+			padding: 15px;
+			margin: 10px 8px 10px 8px;
+			text-align: center;
+		}
+
+		@media (max-width: 481px) {
+			body {font-size: 18px}
+			main,footer {width: 98%}
+			section,article {flex:none; width:100%; margin-left: 0;}
+		}
+	</style>
+
+</head>
+<body>
+    <main>
+    <h1>Gambling</h1>
+
+    <section>
+        <article>
+            <h4>Gambling Problems</h4>
+            <p>Create Custom ETH Options and bet on future Price developments. For placing a PriceGuess, you need to enter 12 digits. 111100000000 would refer to ethereum Price of 1111.0 USD. The player putting the bet is betting on a price increase, while the taker takes the counter bet. After a bet is placed there is 1 min to take the bet. 2-3 minutes later the bet can be resolved. If a bet is not taken or not resolved, the price pool becomes part of the next betting round.</p>
+        </article>
+    </section>
+
+    <!-- <div id="dapp-intro"></div> -->
+    <div id="mm-detected"></div>
+
+    <!-- If I put this into a div bracket, can I then remove the button and replace with address on connect? -->
+    <button id="mm-connect">Connect to MetaMask</button>
+
+    <div id="mm-current-account"></div>
+    
+    <input id="BetAmount-input-box" type="string" placeholder="BetAmount"/>
+    <input id="CounterBetAmount-input-box" type="string" placeholder="CounterBetAmount"/>
+    <input id="PriceGuess-input-box" type="string" placeholder="PriceGuess (12 digits)"/>
+    <button id="ss-input-button">Start</button>
+    <div id="tx-hash"></div>
+
+    <div>
+        <button id="ss-get-value">TakeBet</button>
+    </div>
+    <div id="ss-display-value"></div>
+    <div>
+        <button id="ss2-get-value">Current Price</button>
+    </div>
+    <div id="ss2-display-value"></div>
+    <div>
+        <button id="ss3-get-value">PriceGuess/BetAmount/CounterBetAmount</button>
+    </div>
+    <div id="ss3-display-value"></div>
+    <div id="ss3_2-display-value"></div>
+    <div id="ss3_3-display-value"></div>
+    <div>
+        <button id="ss4-get-value">ClaimPrice</button>
+    </div>
+    <div id="ss4-display-value"></div>
+
+   
+
+    <hr>
+    </main>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
